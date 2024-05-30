@@ -31,11 +31,20 @@ public class Principal {
                 4) Real brasileño =>> Dolar
                 5) Dolar =>> Peso colombiano
                 6) Peso colombiano =>> Dolar
-                7) Salir
+                ****************************
+                7) Lempira =>> Dolar
+                8) Dolar =>> Lempira
+                9) Lempira =>> Peso argentino
+                10) Peso argentino =>> Lempira
+                11) Lempira =>> Real brasileño
+                12) Real brasileño =>> Lempira
+                13) Lempira =>> Peso colombiano
+                14) Peso colombiano =>> Lempira
+                15) Salir
                 """;
 
         //El ciclo que se estara repitiendo hasta que el usuario eliga la opcion salir
-        while(opcion != 7){
+        while(opcion != 15){
 
             System.out.println(menu);
 
@@ -75,6 +84,38 @@ public class Principal {
                     codigoDestino = "USD";
                     break;
                 case 7:
+                    codigoOrigen = "HNL";
+                    codigoDestino = "USD";
+                    break;
+                case 8:
+                    codigoOrigen = "USD";
+                    codigoDestino = "HNL";
+                    break;
+                case 9:
+                    codigoOrigen = "HNL";
+                    codigoDestino = "ARS";
+                    break;
+                case 10:
+                    codigoOrigen = "ARS";
+                    codigoDestino = "HNL";
+                    break;
+                case 11:
+                    codigoOrigen = "HNL";
+                    codigoDestino = "BRL";
+                    break;
+                case 12:
+                    codigoOrigen = "BRL";
+                    codigoDestino = "HNL";
+                    break;
+                case 13:
+                    codigoOrigen = "HNL";
+                    codigoDestino = "COP";
+                    break;
+                case 14:
+                    codigoOrigen = "COP";
+                    codigoDestino = "HNL";
+                    break;
+                case 15:
                     System.out.println("Gracias por usar nuestro sistema");
                     break;
                 default:
@@ -85,7 +126,7 @@ public class Principal {
             }
 
             //codigo para convertir segun la opcion que se eligio
-            if(opcion != 7 && opcion != 0){
+            if(opcion != 15 && opcion != 0){
                 Moneda moneda = busqueda.buscarMoneda(codigoOrigen);
 
                 //un ciclo para repetir la opción del valor de la moneda a convertir
