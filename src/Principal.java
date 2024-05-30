@@ -30,8 +30,8 @@ public class Principal {
                 3) Dolar =>> Real brasileño
                 4) Real brasileño =>> Dolar
                 5) Dolar =>> Peso colombiano
-                6) Peso colombiano =>> Dolar
-                ****************************
+                6) Peso colombiano =>> Dolar \n
+                **** Cambio de moneda Honduras *****\n
                 7) Lempira =>> Dolar
                 8) Dolar =>> Lempira
                 9) Lempira =>> Peso argentino
@@ -45,8 +45,11 @@ public class Principal {
 
         //El ciclo que se estara repitiendo hasta que el usuario eliga la opcion salir
         while(opcion != 15){
-
+            System.out.println("**********************************************************");
+            System.out.println("Sea bienvenido/a al Conversor de Moneda =]\n");
             System.out.println(menu);
+            System.out.println("Elija una opción valida:");
+            System.out.println("**********************************************************\n");
 
             //majeno de errores para que el usuario solo seleccione un número y no otro caracter
             try {
@@ -140,7 +143,7 @@ public class Principal {
                         valorEquivalente = moneda.conversion_rates().get(codigoDestino);
 
                         double monedaConvertida = convertir.convertirMondeda(valorConvertir, valorEquivalente);
-                        System.out.println(monedaConvertida);
+                        System.out.println("El valor "+valorConvertir+" ["+codigoOrigen+"] Corresponde al valor final de >>>>>>> "+monedaConvertida +" ["+codigoDestino+"]\n");
 
                         valorNumeroValido = false;
 
