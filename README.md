@@ -40,5 +40,6 @@
 <p>En este codigo tenemos otro ciclo while para el valor de la moneda que se desa convertir. También tiene un manejador de errores para que no se introduzcan valores que no sean del tipo double<p>
 
 
-
+<h2>Nota</h2>
+<p>En la Clase principal, en las opciones a elegir, agregue unas opciones que son conversiones de la moneda al pais que yo pertenezco el cual es Hoduras y su moneda es el Lempira</p>
 
